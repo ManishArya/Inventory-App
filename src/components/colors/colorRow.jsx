@@ -3,7 +3,7 @@ import React from 'react';
 export default function ColorRows(props) {
   return (
     <tr>
-      <td>{props.id}</td>
+      <td>{props.id} </td>
       <td>{props.colorCode}</td>
       <td>{props.colorName}</td>
       <td>

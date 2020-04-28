@@ -17,6 +17,14 @@ class Color extends Component {
       isHideList: false,
       isEdit: false,
     };
+
+    fetch('http://localhost:8080/color/').then((res) =>
+      res.json().then((data) => {
+        this.setState({
+          colorList: data.colorList,
+        });
+      })
+    );
   }
 
   textChnage = (e) => {
@@ -106,6 +114,8 @@ class Color extends Component {
       });
     }
   };
+
+  UNSAFE_componentWillMount() {}
 
   renderElement() {
     if (this.state.isHideList) {

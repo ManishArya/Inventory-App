@@ -13,7 +13,8 @@ const routing = (
     <Switch>
       <Route exact path="/" component={App} />
       <Route path="/dashboard" component={Dashboard} />
-      <Route path="/Workspace" component={Workspace} />
+      <Route exact path="/Workspace" component={Workspace} />
+      <Route path="/Workspace/:componentType" component={Workspace} />
       <Route component={Notfound} />
     </Switch>
   </Router>

@@ -9,6 +9,9 @@ export default function Navbar() {
       <li>
         <Link to="/workspace">Workspace</Link>
       </li>
+      <li>
+        <Link to="/">Logout</Link>
+      </li>
     </ul>
   );
 }
